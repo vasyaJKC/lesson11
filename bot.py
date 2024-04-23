@@ -5,10 +5,10 @@ from parser_laptops import product_data
 token = '7161393431:AAEbBFmJ32Z7vOPyxpqBTRZpWsn-PzI0_zY'
 bot = TeleBot(token)
 
-data_name = product_data[0]['Noutbok nomi']
-data_price = product_data[0]['Noutbok narxi']
-data_kridit = product_data[0]["Muddatli to'lov"]
-data_image = product_data[0]["Noutbok rasmi"]
+name = product_data[0]['Noutbok nomi']
+price = product_data[0]['Noutbok narxi']
+kridit = product_data[0]["Muddatli to'lov"]
+img = product_data[0]["Noutbok rasmi"]
 @bot.message_handler(['start'])
 def start(message):
     chat_id = message.chat.id
